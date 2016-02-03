@@ -1,0 +1,10 @@
+app:
+  build: .
+  container_name: hbn-sqlschool
+  restart: always
+  environment:
+    - NLS_LANG=KOREAN_KOREA.UTF8
+    - LANG=ko_KR.UTF-8
+  ports: 
+    - "9521:1521"
+    - "9080:8080"
